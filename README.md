@@ -24,7 +24,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Frontend Mentor - Intro component with sign up form solution](https://mayanksetia13.github.io/IntroComponentSignUpForm-FrontEndMentor/)
+- Live_Site_URL: [Frontend Mentor - Intro component with sign up form solution](https://mayanksetia13.github.io/IntroComponentSignUpForm-FrontEndMentor/)
 
 ## My process
 
