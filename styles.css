@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+    --bg-red: hsl(0, 100%, 74%);
+    --btn-green: hsl(154, 59%, 51%);
+    --btn-purple: hsl(248, 32%, 49%);
+    --text-grayish: hsl(246, 25%, 77%);
+    --dark-grey: hsl(249, 10%, 26%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    box-sizing: border-box;
+    border-style: none;
+}
+
+body {
+    /* min-height: 100vh; */
+    background-image: url(/images/bg-intro-desktop.png);
+    background-color: var(--bg-red);
+}
+
+.main {
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* border: 2px solid black; */
+}
+
+.intro-div {
+    /* border: 2px solid black; */
+    text-align: center;
+    padding: 90px 20px 40px 20px;
+    width: 325px;
+}
+
+.intro-div .intro-heading {
+    font-weight: 700;
+    color: white;
+    line-height: 1.3em;
+    padding-bottom: 20px;
+}
+
+.intro-div .intro-para {
+    color: hsl(245, 28%, 92%);
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 15px;
+}
+
+.trial-btn {
+    border-radius: 8px;
+    padding: 18px 75px;
+    background-color: var(--btn-purple);
+    color: white;
+    line-height: 1.8em;
+    width: 325px;
+    cursor: pointer;
+}
+
+.trial-btn span {
+    font-weight: 700;
+    color: white;
+}
+
+.trial-btn p {
+    font-weight: 400;
+    color: white;
+}
+
+.form-deck {
+    background-color: white;
+    /* border: 2px solid black; */
+    border-radius: 8px;
+    width: 325px;
+    height: 450px;
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+
+.form-deck .form-list li {
+    padding: 20px 0;
+    position: relative;
+}
+
+.form-deck .form-list li:first-child {
+    padding-top: 15px;
+}
+
+.form-deck .form-list li input {
+    border: 1px solid var(--text-grayish);
+    border-radius: 6px;
+    width: 90%;
+    padding: 8px 40px 8px 8px;
+}
+
+.form-deck .form-list li img{
+    position: absolute;
+    right: 22px;
+    top: 25px;
+    opacity: 0;
+}
+
+.error-m{
+    color: hsl(0, 100%, 74%);
+    display: block;
+    text-align: right;
+    position:absolute;
+    right: 18px;
+    bottom: -3px;
+    opacity: 0;
+}
+
+.form-deck .form-list li input ::placeholder {
+    color: var(--dark-grey);
+    font-weight: 600;
+}
+
+.submit-btn {
+    background-color: var(--btn-green);
+    color: hsl(245, 28%, 92%);
+    border-radius: 8px;
+    width: 90%;
+    padding: 13px 16px;
+    margin-top: 15px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+footer {
+    padding-top: 12px;
+    font-size: 13px;
+    color: hsl(245, 16%, 72%);
+}
+
+footer span {
+    color: var(--bg-red);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 990px) {
+
+    .main {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        /* border: 2px solid black; */
+        padding: 0 60px;
+    }
+
+    .intro-div {
+        /* border: 2px solid black; */
+        width: 570px;
+        text-align: left;
+    }
+
+    .signup-div {
+        display: flex;
+        flex-direction: column;
+        /* border: 2px solid black; */
+    }
+
+    .trial-btn {
+        border-radius: 8px;
+        padding: 18px 75px;
+        background-color: var(--btn-purple);
+        color: white;
+        line-height: 1.8em;
+        width: 540px;
+    }
+
+    .form-deck {
+        width: 540px;
+        height: 580px;
+    }
+
+    /* .form-deck .form-list li {
+        padding: 18px;
+    } */
+    .form-deck .main-form {
+        height: 400px;
+        padding: 30px 0;
+        /* border: 2px solid black; */
+    }
+
+    .form-list{
+        position: relative;
+    }
+
+    .form-deck .form-list li {
+        padding-bottom: 20px;
+        position: relative;
+    }
+
+    .form-deck .form-list li input {
+        padding: 18px 20px;
+        border: 1px solid var(--text-grayish);
+        border-radius: 6px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .form-deck .form-list li input:focus{
+        border: 1.3px solid hsl(248, 32%, 49%);
+        outline: none;
+    }
+
+    .form-deck .form-list li img{
+        position: absolute;
+        right: 35px;
+        top: 30px;
+        opacity: 0;
+    }
+
+    .submit-btn {
+        margin-top: 20px;
+        font-size: 18px;
+        margin-top: 50px;
+    }
+
+    .error-m{
+        color: hsl(0, 100%, 74%);
+        display: block;
+        text-align: right;
+        position:absolute;
+        right: 28px;
+        bottom: -5px;
+        opacity: 0;
+    }
+
+}
