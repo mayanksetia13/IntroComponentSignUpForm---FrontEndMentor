@@ -23,6 +23,7 @@ form.addEventListener("submit", (e) => {
     let error = document.querySelector(".error-img-1");
     small.style.opacity = 0;
     error.style.opacity = 0;
+    firstName.style.borderColor = "hsl(246, 25%, 77%)";
   }
 
   if (lastName.value === "") {
@@ -38,6 +39,7 @@ form.addEventListener("submit", (e) => {
     small.innerText = "Last Name is required";
     small.style.opacity = 0;
     error.style.opacity = 0;
+    lastName.style.borderColor = "hsl(246, 25%, 77%)";
   }
   
 
@@ -61,6 +63,7 @@ form.addEventListener("submit", (e) => {
     small.innerText = "Email is required";
     small.style.opacity = 0;
     error.style.opacity = 0;
+    emailId.style.borderColor = "hsl(246, 25%, 77%)";
   }
 
   if (password.value === "") {
@@ -76,6 +79,7 @@ form.addEventListener("submit", (e) => {
     small.innerText = "Password is required";
     small.style.opacity = 0;
     error.style.opacity = 0;
+    password.style.borderColor = "hsl(246, 25%, 77%)";
   }
 });
 
